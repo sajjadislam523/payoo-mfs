@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Payoo Home Page</title>
+</head>
+
+<body>
+
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="artboard artboard-demo phone-2">
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-value text-lg">$ <span id="balance">00.00</span> </div>
+                            <div class="stat-desc">Available Balance</div>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="flex justify-center flex-wrap">
+                        <button class="btn btn-outline">Add Money</button>
+                        <button class="btn btn-outline">Cashout</button>
+                        <!-- <button class="btn btn-outline">Transfer Money</button>
+                        <button class="btn btn-outline">Get Bonus</button>
+                        <button class="btn btn-outline">Pay Bill</button>
+                        <button class="btn btn-outline">Transaction</button> -->
+                    </div>
+                    <div class="divider"></div>
+                    <!-- Add money form -->
+
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Amount to Add</span>
+                                </label>
+                                <input id="amount" type="text" placeholder="Add Amount"
+                                    class="input input-bordered rounded-3xl" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin Number</span>
+                                </label>
+                                <input id="pin" type="password" placeholder="Enter 4 digit pin number"
+                                    class="input input-bordered rounded-3xl" required />
+                            </div>
+                            <div class="form-control mt-6">
+                                <button id="btnAddmoney" class="btn btn-primary rounded-3xl">Add Money</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/home.js"></script>
+</body>
+
+</html>
